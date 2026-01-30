@@ -8,56 +8,137 @@
     <script type="module" src="/src/main.js"></script>
     <title>netflix-project</title>
   </head>
-  <body class="h-screen w-screen overflow-hidden flex items-center justify-center relative bg-no-repeat bg-cover">
+  <body class="h-screen w-screen overflow-hidden flex items-center justify-center relative bg-gray-900 text-white font-sans">
 
     <div class="absolute inset-0 bg-[url(/netflix-background.jpg)] bg-cover bg-center"></div>
 
     <div class="relative z-10 w-[95%] h-[90%] max-w-400 flex 
-                bg-white/30 backdrop-blur-lg 
-                rounded-[40px] border border-white/10 shadow-2xl overflow-hidden">
-                
+                bg-white-30 backdrop-blur-3xl 
+                rounded-[40px] border border-white/10 shadow-2xl overflow-hidden ">
 
-        <div class="w-24 py-10 flex flex-col items-center border-r border-white/5 bg-white/5 ">
-            <span class="material-symbols-outlined">home</span>
-            <span class="material-symbols-outlined">search</span>
-            <span class="material-symbols-outlined">menu</span>
-            <span class="material-symbols-outlined">settings</span>
-            </div>
-
-        <div class="w-75 p-8 flex flex-col border-r border-white/5">
-            <img src="/01_Netflix_Logo/01_Netflix_Logo/01_Netflix_Logo_RGB/Netflix_Logo_RGB.png" alt="Netflix" class="w-50 mb-10 object-contain">
-            <nav class="flex flex-col space-y-6" id="nav-menu">
-    
-                <a href="#" class="flex items-center gap-4 group text-gray-400 hover:text-white transition-colors duration-200">
-        <div class="nav-dot w-1.5 h-1.5 bg-transparent border border-gray-500 rounded-full group-hover:border-white transition-all duration-300"></div>
-        <span class="nav-text font-medium text-sm tracking-wide">Browse</span>
-    </a>
-
-                <a href="#" class="nav-item flex items-center gap-4 group text-gray-400 hover:text-white transition-colors duration-200">
-                    <div class="nav-dot w-1.5 h-1.5 bg-transparent border border-gray-500 rounded-full group-hover:border-white transition-all duration-300"></div>
-                    <span class="font-medium text-sm tracking-wide">Wishlist</span>
-                </a>
-
-                <a href="#" class="nav-item flex items-center gap-4 group text-gray-400 hover:text-white transition-colors duration-200">
-                    <div class="nav-dot w-1.5 h-1.5 bg-transparent border border-gray-500 rounded-full group-hover:border-white transition-all duration-300"></div>
-                    <span class="font-medium text-sm tracking-wide">Coming Soon</span>
-                </a>
-
-            </nav>
-        </div>
-
-
-        <div class="flex-1 flex flex-col relative overflow-hidden">
+        <div class="w-24 py-12 flex flex-col items-center border-r border-white/10 bg-white/5 backdrop-blur-md gap-8 shrink-0">
             
-            <header class="h-24 w-full flex items-center justify-between px-8">
-                 </header>
+            <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center shadow-lg shadow-red-600/50 mb-4 cursor-pointer hover:scale-105 transition">
+                <span class="material-symbols-outlined text-white">play_arrow</span>
+            </div>              
 
-            <div class="flex-1 overflow-y-auto no-scrollbar px-8 pb-8">
-                 </div>
+            <div class="flex flex-col gap-8 text-white-400">
+                <span class="material-symbols-outlined cursor-pointer hover:text-white transition">home</span>
+                <span class="material-symbols-outlined cursor-pointer hover:text-white transition">movie</span>
+                <span class="material-symbols-outlined cursor-pointer hover:text-white transition">sensors</span>
+                <span class="material-symbols-outlined cursor-pointer hover:text-white transition">grid_view</span>
+            </div>
+            
+            <div class="mt-auto text-white-400">
+                <span class="material-symbols-outlined cursor-pointer hover:text-white transition">search</span>
+            </div>
+        </div>
+
+
+
+     <div class="w-75 flex flex-col border-r border-white/5 shrink-0 h-full">
+
+    <div class="p-8 pb-0 mb-6">
+        <img src="/01_Netflix_Logo/01_Netflix_Logo/01_Netflix_Logo_RGB/Netflix_Logo_RGB.png" alt="Netflix" class="w-32 mb-10 object-contain">
+        
+        <nav class="flex flex-col space-y-6" id="nav-menu">
+            <a href="#" class="nav-item flex items-center gap-4 group text-gray-400 hover:text-white transition-colors duration-200">
+                <div class="nav-dot w-1.5 h-1.5 bg-transparent border border-gray-500 rounded-full group-hover:border-white transition-all duration-300"></div>
+                <span class="nav-text font-medium text-sm tracking-wide">Browse</span>
+            </a>
+            <a href="#" class="nav-item flex items-center gap-4 group text-gray-400 hover:text-white transition-colors duration-200">
+                <div class="nav-dot w-1.5 h-1.5 bg-transparent border border-gray-500 rounded-full group-hover:border-white transition-all duration-300"></div>
+                <span class="font-medium text-sm tracking-wide">Wishlist</span>
+            </a>
+            <a href="#" class="nav-item flex items-center gap-4 group text-gray-400 hover:text-white transition-colors duration-200">
+                <div class="nav-dot w-1.5 h-1.5 bg-transparent border border-gray-500 rounded-full group-hover:border-white transition-all duration-300"></div>
+                <span class="font-medium text-sm tracking-wide">Coming Soon</span>
+            </a>
+        </nav>
+    </div>
+     
+    
+    <div class="flex items-center gap-2 mb-2 ">
+            <h3 class="text-gray-400 font-medium text-sm uppercase px-6 tracking-wider">New Trailers</h3>
+            <span class="text-lg">🔥</span>
+        </div>
+
+    <div class="flex-1 p-8 mt-4 overflow-y-auto no-scrollbar">
+        
+        
+
+        <div class="flex flex-col gap-4 pb-4">
+
+            <a href="https://www.youtube.com/watch?v=bkjyJPfBS4s" target="_blank" class="group block">
+                <div class="relative h-32 w-full rounded-xl overflow-hidden shadow-lg border border-white/5">
+                    <div class="absolute inset-0 bg-[url('https://img.youtube.com/vi/bkjyJPfBS4s/maxresdefault.jpg')] bg-cover bg-center group-hover:scale-110 transition duration-500"></div>
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition">
+                        <div class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30 group-hover:bg-red-600 group-hover:border-red-600 transition">
+                            <span class="material-symbols-outlined text-white text-sm">play_arrow</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-2 flex justify-between items-center px-1">
+                    <span class="text-gray-300 text-xs font-medium group-hover:text-white transition">Ichigo vs Ulquiorra</span>
+                    <span class="text-gray-500 text-[10px]">2m</span>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=Xf0ZWb3-5MY" target="_blank" class="group block">
+                <div class="relative h-32 w-full rounded-xl overflow-hidden shadow-lg border border-white/5">
+                    <div class="absolute inset-0 bg-[url('https://img.youtube.com/vi/Xf0ZWb3-5MY/maxresdefault.jpg')] bg-cover bg-center group-hover:scale-110 transition duration-500"></div>
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition">
+                         <div class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30 group-hover:bg-red-600 group-hover:border-red-600 transition">
+                            <span class="material-symbols-outlined text-white text-sm">play_arrow</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-2 flex justify-between items-center px-1">
+                    <span class="text-gray-300 text-xs font-medium group-hover:text-white transition">One Piece</span>
+                    <span class="text-gray-500 text-[10px]">1m 45s</span>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=ihgWUo6tvJQ" target="_blank" class="group block">
+                <div class="relative h-32 w-full rounded-xl overflow-hidden shadow-lg border border-white/5">
+                    <div class="absolute inset-0 bg-[url('https://img.youtube.com/vi/ihgWUo6tvJQ/maxresdefault.jpg')] bg-cover bg-center group-hover:scale-110 transition duration-500"></div>
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition">
+                         <div class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30 group-hover:bg-red-600 group-hover:border-red-600 transition">
+                            <span class="material-symbols-outlined text-white text-sm">play_arrow</span>
+                            </div>
+                    </div>
+                
+                <div class="mt-2 flex justify-between items-center px-1">
+                    <span class="text-gray-300 text-xs font-medium group-hover:text-white transition">Rock Lee vs Gaara</span>
+                    <span class="text-gray-500 text-[10px]">2m 10s</span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</div>
 
         </div>
 
+
+             <div class="flex-1 flex flex-col relative overflow-hidden">
+            
+    <header class="h-24 w-full flex items-center justify-between px-8 z-20 shrink-0">
+        <div class="flex gap-4 text-gray-400">
+        <button class="hover:text-white transition p-2 hover:bg-white/10 rounded-full flex items-center justify-center">
+            <span class="material-symbols-outlined text-xl">chevron_left</span>
+        </button>
+        <button class="hover:text-white transition p-2 hover:bg-white/10 rounded-full flex items-center justify-center">
+            <span class="material-symbols-outlined text-xl">chevron_right</span>
+        </button>
     </div>
 
-  </body>
+
+
+    </header>
+
+       <div class="flex-1 overflow-y-auto no-scrollbar px-8 pb-8">
+             </div>
+
+        </div> </div> </body>
 </html>
