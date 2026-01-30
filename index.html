@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script type="module" src="/src/main.js"></script>
+    <title>netflix-project</title>
+  </head>
+  <body class="h-screen w-screen overflow-hidden flex items-center justify-center relative bg-no-repeat bg-cover">
+
+    <div class="absolute inset-0 bg-[url(/netflix-background.jpg)] bg-cover bg-center"></div>
+
+    <div class="relative z-10 w-[95%] h-[90%] max-w-400 flex 
+                bg-white/30 backdrop-blur-lg 
+                rounded-[40px] border border-white/10 shadow-2xl overflow-hidden">
+                
+
+        <div class="w-24 py-10 flex flex-col items-center border-r border-white/5 bg-white/5 ">
+            <span class="material-symbols-outlined">home</span>
+            <span class="material-symbols-outlined">search</span>
+            <span class="material-symbols-outlined">menu</span>
+            <span class="material-symbols-outlined">settings</span>
+            </div>
+
+        <div class="w-75 p-8 flex flex-col border-r border-white/5">
+            <img src="/01_Netflix_Logo/01_Netflix_Logo/01_Netflix_Logo_RGB/Netflix_Logo_RGB.png" alt="Netflix" class="w-50 mb-10 object-contain">
+            <nav class="flex flex-col space-y-6" id="nav-menu">
+    
+                <a href="#" class="flex items-center gap-4 group text-gray-400 hover:text-white transition-colors duration-200">
+        <div class="nav-dot w-1.5 h-1.5 bg-transparent border border-gray-500 rounded-full group-hover:border-white transition-all duration-300"></div>
+        <span class="nav-text font-medium text-sm tracking-wide">Browse</span>
+    </a>
+
+                <a href="#" class="nav-item flex items-center gap-4 group text-gray-400 hover:text-white transition-colors duration-200">
+                    <div class="nav-dot w-1.5 h-1.5 bg-transparent border border-gray-500 rounded-full group-hover:border-white transition-all duration-300"></div>
+                    <span class="font-medium text-sm tracking-wide">Wishlist</span>
+                </a>
+
+                <a href="#" class="nav-item flex items-center gap-4 group text-gray-400 hover:text-white transition-colors duration-200">
+                    <div class="nav-dot w-1.5 h-1.5 bg-transparent border border-gray-500 rounded-full group-hover:border-white transition-all duration-300"></div>
+                    <span class="font-medium text-sm tracking-wide">Coming Soon</span>
+                </a>
+
+            </nav>
+        </div>
+
+
+        <div class="flex-1 flex flex-col relative overflow-hidden">
+            
+            <header class="h-24 w-full flex items-center justify-between px-8">
+                 </header>
+
+            <div class="flex-1 overflow-y-auto no-scrollbar px-8 pb-8">
+                 </div>
+
+        </div>
+
+    </div>
+
+  </body>
+</html>
